@@ -268,31 +268,6 @@ dl dd {
     color: var(--text-secondary);
 }
 
-.button {
-    background: var(--button);
-    border-radius: var(--spacing-02);
-    color: var(--text-on-color);
-    cursor: pointer;
-    display: inline-flex;
-    font-weight: 600;
-    padding: 0.25em 1.3em;
-    text-decoration: none;
-    white-space: nowrap;
-    align-items: center;
-    position: inherit;
-    top: var(--spacing-02);
-    right: var(--spacing-02);
-    height: 32px;
-}
-
-.button:hover {
-    background: var(--button-hover)
-}
-
-.button:active {
-    background: var(--button-active)
-}
-
 a {
     font-weight: 600;
     text-decoration: underline;
@@ -320,6 +295,26 @@ em {
     font-style: italic;
 }
 
+pre.code {
+    padding: var(--spacing-04);
+    font-family: var(--monospace-code);
+    font-size: var(--desktop-code);
+    line-height: var(--lh-desktop-code);
+    overflow-x:scroll;
+    margin-bottom:8px;
+    border: 1px solid var(--border-inked);
+    border-radius: var(--spacing-02);
+}
+
+span.cpill {
+    padding: var(--spacing-02);
+    font-family: var(--monospace-code);
+    font-size: var(--desktop-code);
+    line-height: var(--lh-desktop-code);
+    border: 1px solid var(--border-inked);
+    border-radius: var(--spacing-02);
+}
+
 @media (max-width: 50rem) {
 
     header,
@@ -330,9 +325,8 @@ em {
     main form aside fieldset input {
       width: 100%;
     }
-    .button {
-      top: var(--spacing-02);
-      right: var(--spacing-02);
-      height: 30px;
+    header {
+        border-radius: var(--spacing-00);
+        margin-top: var(--spacing-00);
     }
 }
