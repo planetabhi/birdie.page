@@ -144,7 +144,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     min-height: 100vh;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
+    padding-top: 5.6%;
 }
 
 @supports(-webkit-touch-callout: none) {
@@ -165,7 +166,6 @@ header {
     height: var(--spacing-18, 8em);
     background: var(--accent);
     border-radius: var(--spacing-02);
-    margin-top: var(--spacing-08);
 }
 
 header h1 {
@@ -316,7 +316,7 @@ span.cpill {
 }
 
 @media (max-width: 50rem) {
-
+    body {padding-top: var(--spacing-00);}
     header,
     main {
         padding-left: var(--spacing-09, 2em);
@@ -327,6 +327,5 @@ span.cpill {
     }
     header {
         border-radius: var(--spacing-00);
-        margin-top: var(--spacing-00);
     }
 }
