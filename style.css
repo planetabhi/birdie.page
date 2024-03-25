@@ -307,7 +307,7 @@ pre.code {
 }
 
 span.cpill {
-    padding: var(--spacing-02);
+    padding: var(--spacing-01) var(--spacing-02);
     font-family: var(--monospace-code);
     font-size: var(--desktop-code);
     line-height: var(--lh-desktop-code);
